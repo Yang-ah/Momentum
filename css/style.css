@@ -15,6 +15,10 @@ body {
   height: 100vh;
 }
 
+ul {
+  list-style: none;
+}
+
 a {
   font-style: none;
 }
@@ -110,7 +114,7 @@ section {
 }
 .clock {
   font-size: 120px;
-  margin-top: 120px;
+  margin-top: 100px;
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
 }
@@ -143,4 +147,25 @@ section {
   color: rgba(255, 255, 255, 0.8);
   font-size: 30px;
   font-weight: 700;
+}
+
+/* login end */
+.todolist-form {
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 10px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todolist-form input {
+  width: 300px;
+  background-color: inherit;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  margin-top: 5px;
+  padding: 5px 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
 }
