@@ -17,7 +17,11 @@ body {
 
 a {
   font-style: none;
-  color: black;
+}
+
+input {
+  outline: none;
+  border: none;
 }
 
 button {
@@ -97,8 +101,30 @@ header {
 
 /* header end */
 
+section {
+  width: 320px;
+}
 .clock {
   font-size: 120px;
   margin-top: 120px;
   color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+}
+
+.login-form input {
+  width: 75%;
+  padding: 5px;
+  padding-left: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.login-form button {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  width: 25%;
 }
