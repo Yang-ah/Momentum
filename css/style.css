@@ -5,7 +5,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Fuzzy Bubbles", cursive;
-  background-color: green;
+}
+
+body {
+  background-size: cover;
 }
 
 a {
