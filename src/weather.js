@@ -17,7 +17,7 @@ function onLoad(location) {
       } else {
         weatherIcon.innerHTML = `${data.weather[0].main}`;
       }
-      temperature.innerText = `${Math.floor(data.main.temp)}°C`;
+      temperature.innerText = ` ${Math.floor(data.main.temp)}°`;
     });
 }
 

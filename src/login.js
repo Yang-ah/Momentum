@@ -9,7 +9,6 @@ const savedUsername = localStorage.getItem(LOGIN_KEY);
 
 function login(e) {
   let username = name.value;
-  e.preventDefault();
   localStorage.setItem(LOGIN_KEY, username);
   greeting(username);
 }

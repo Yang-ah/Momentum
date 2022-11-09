@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Fuzzy Bubbles", cursive;
+  line-height: 1;
 }
 
 body {
@@ -29,15 +30,13 @@ input {
 }
 
 button {
-  width: 40px;
   background-color: inherit;
-  font-size: 15px;
-  color: white;
-  font-weight: 700;
-  cursor: pointer;
   outline: none;
   border-style: none;
+  cursor: pointer;
 }
+
+/* reset */
 
 header {
   width: 100%;
@@ -52,11 +51,18 @@ header {
   position: relative;
 }
 
+.dropdown-btn {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+
 .Apps {
   display: none;
   position: absolute;
-  width: 40px;
+  width: 100%;
   text-align: center;
+  margin-top: 10px;
 }
 
 .dropdown:hover .Apps {
@@ -65,7 +71,7 @@ header {
 }
 
 .Apps a {
-  font-size: 20px;
+  font-size: 30px;
   margin: 20px 0px;
   color: white;
 }
@@ -102,7 +108,33 @@ header {
     transform: translateX(0);
   }
 }
+/* apps end */
+.weather {
+  font-weight: 400;
+  display: flex;
+}
+.weather-icon {
+  font-size: 20px;
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.weather-temp {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
 
+#weather-space {
+  padding-left: 2px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.weather-loca {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+}
 /* header end */
 
 section {
@@ -113,8 +145,8 @@ section {
   justify-content: center;
 }
 .clock {
-  font-size: 120px;
-  margin-top: 100px;
+  font-size: 170px;
+  margin-top: 140px;
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
 }
@@ -122,19 +154,23 @@ section {
 .login-form {
   width: 100%;
   display: flex;
+  margin-top: 15px;
 }
 
 .login-form input {
   width: 75%;
-  padding: 5px;
+  padding: 10px;
   padding-left: 10px;
   background-color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
 }
 
 .login-form button {
+  font-size: 18px;
   border: 1px solid rgba(255, 255, 255, 0.8);
   padding: 5px;
   width: 25%;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .hidden {
@@ -142,19 +178,19 @@ section {
 }
 
 .greet {
-  width: 600px;
+  width: 1000px;
   text-align: center;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 700;
+  padding-bottom: 10px;
 }
 
 /* login end */
 .todolist-form {
   color: rgba(255, 255, 255, 0.8);
   margin-top: 10px;
-  font-size: 20px;
-  display: flex;
+  font-size: 28px;
   flex-direction: column;
   align-items: center;
 }
@@ -163,9 +199,26 @@ section {
   width: 300px;
   background-color: inherit;
   border-bottom: 1px solid rgba(255, 255, 255, 0.8);
-  margin-top: 5px;
+  margin: 5px;
   padding: 5px 0;
   text-align: center;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 16px;
+  font-size: 30px;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.todo-list li > div {
+  padding-top: 2px;
+}
+.todo-list button {
+  padding-left: 5px;
+}
+
+.flex {
+  display: flex;
 }
