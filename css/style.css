@@ -173,10 +173,6 @@ section {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.hidden {
-  display: none;
-}
-
 .greet {
   width: 1000px;
   text-align: center;
@@ -187,7 +183,7 @@ section {
 }
 
 /* login end */
-.todolist-form {
+.focus-form {
   color: rgba(255, 255, 255, 0.8);
   margin-top: 10px;
   font-size: 28px;
@@ -195,8 +191,8 @@ section {
   align-items: center;
 }
 
-.todolist-form input {
-  width: 300px;
+.focus-form input {
+  width: 90%;
   background-color: inherit;
   border-bottom: 1px solid rgba(255, 255, 255, 0.8);
   margin: 5px;
@@ -206,19 +202,49 @@ section {
   font-size: 30px;
 }
 
-.todo-list li {
+.flex {
+  display: flex;
+}
+
+.focus-show {
+  margin: 20px 10px;
+  margin-right: 0;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.focus-div {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px;
-}
-.todo-list li > div {
-  padding-top: 2px;
-}
-.todo-list button {
-  padding-left: 5px;
+  position: relative;
 }
 
-.flex {
-  display: flex;
+.focus-div input {
+  width: 30px;
+  outline: none;
+  border: none;
+}
+#focus-check {
+  cursor: pointer;
+}
+
+.strike-text {
+  text-decoration: line-through;
+}
+
+.focus-X {
+  padding: 0 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* 고정 */
+.hidden {
+  display: none;
+}
+
+#todolist {
+  display: none;
 }

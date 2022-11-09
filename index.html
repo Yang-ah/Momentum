@@ -10,6 +10,7 @@
     <script defer src="src/background.js"></script>
     <script defer src="src/clock.js"></script>
     <script defer src="src/login.js"></script>
+    <script defer src="src/focus.js"></script>
     <script defer src="src/todolist.js"></script>
   </head>
   <body id="body">
@@ -48,11 +49,21 @@
       </form>
       <div class="greet hidden"></div>
     </section>
-    <form class="todolist-form">
+    <form class="focus-form">
       <div>What is your main focus for today?</div>
+      <input type="text" class="focus-input" />
+      <div class="focus-div hidden">
+        <i class="fa-regular fa-square" id="focus-check"></i>
+        <div class="focus-show"></div>
+        <div class="focus-X hidden">❌</div>
+      </div>
+    </form>
+
+    <form class="todolist-form hidden" id="todolist">
       <input type="text" class="todo-innput" />
       <ul class="todo-list"></ul>
     </form>
+
     <script
       defer=""
       src="https://kit.fontawesome.com/d9ac628af8.js"
