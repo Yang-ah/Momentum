@@ -14,6 +14,8 @@ function onLoad(location) {
       city.innerText = data.name;
       if (data.weather[0].main == "Clear") {
         weatherIcon.innerHTML = `<i class="fa-regular fa-sun"></i>`;
+      } else if (data.weather[0].main == "Clouds") {
+        weatherIcon.innerHTML = `<i class="fa-solid fa-cloud"></i>`;
       } else {
         weatherIcon.innerHTML = `${data.weather[0].main}`;
       }

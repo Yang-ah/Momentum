@@ -1,25 +1,27 @@
-#todolist {
+.todolist-form {
+  padding: 15px;
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: 15px;
+  right: 15px;
   width: 200px;
   background-color: rgba(255, 255, 255, 0.5);
   display: flex;
   flex-direction: column;
   border-radius: 5px;
   align-items: center;
-  padding: 10px;
 }
-#todolist-li-input {
-  display: flex;
-  justify-content: center;
-  color: white;
-  align-items: center;
-}
-#todolist-li-input button {
-  margin: -10px 10px 0 5px;
+
+.todolist-btn {
   color: white;
   font-size: 20px;
+}
+
+#todolist-inputLi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0 15px 0;
+  color: white;
 }
 
 .todo-input {
@@ -27,39 +29,43 @@
   height: 30px;
   background-color: rgba(255, 255, 255, 0);
   border-bottom: 2px solid white;
-  padding-left: 5px;
-  margin-bottom: 10px;
   line-height: 1;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .todolist-btn {
   width: 100%;
   background-color: rgba(255, 255, 255, 0);
   text-shadow: #fc0 1px 0 10px;
-  padding: 10px;
   color: white;
   font-weight: 700;
   font-size: 20px;
+  cursor: pointer;
 }
+
+/* top-btn end */
+
 .todolist-ul {
   width: 100%;
 }
+
 .todolist-ul li {
-  padding-bottom: 15px;
   display: flex;
   align-items: center;
 }
-.todolist-ul li:first-child {
-  padding-bottom: 5px;
-}
+
+.todolist-ul li > button,
 .todolist-ul li > span {
-  padding: 4px;
   color: rgba(255, 255, 255, 0.8);
   font-size: 18px;
 }
+
 .todolist-ul li > i {
   font-size: 18px;
   color: rgba(255, 255, 255, 0.8);
-  padding-right: 2px;
+}
+
+.todolist-ul li > span {
+  padding: 5px;
+  overflow: hidden;
 }
