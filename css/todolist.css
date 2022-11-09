@@ -1,0 +1,19 @@
+#todolist {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 200px;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-input {
+  font-size: 10px;
+}
+
+.todolist-btn {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}

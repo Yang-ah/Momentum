@@ -1,0 +1,56 @@
+.focus-form {
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 10px;
+  font-size: 28px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.focus-form input {
+  width: 90%;
+  background-color: inherit;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  margin: 5px;
+  padding: 5px 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 30px;
+}
+
+.flex {
+  display: flex;
+}
+
+.focus-show {
+  margin: 20px 10px;
+  margin-right: 0;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.focus-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.focus-div input {
+  width: 30px;
+  outline: none;
+  border: none;
+}
+#focus-check {
+  cursor: pointer;
+}
+
+.strike-text {
+  text-decoration: line-through;
+}
+
+.focus-X {
+  padding: 0 5px;
+  cursor: pointer;
+  font-size: 20px;
+}

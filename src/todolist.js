@@ -1,7 +1,9 @@
 const todoForm = document.querySelector(".todolist-form");
 const todoInput = document.querySelector(".todo-innput");
-const todoUl = document.querySelector(".todo-list");
+const todoUl = document.querySelector(".todolist-ul");
 const TODO_KEY = "todo";
+const todoBtn = document.querySelector(".todolist-btn");
+
 let todoList = [];
 
 const saveTodo = (todo) => localStorage.setItem(TODO_KEY, JSON.stringify(todo));
@@ -37,4 +39,11 @@ if (localStorage.getItem("username") === null) {
   todoForm.classList.remove("hidden");
   todoForm.classList.add("flex");
   todoForm.addEventListener("submit", handleSubmit);
+}
+
+todoBtn.addEventListener("click", activeUl);
+
+function activeUl(e) {
+  e.preventDefault();
+  todoUl.classList.toggle("hidden");
 }

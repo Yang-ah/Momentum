@@ -13,6 +13,11 @@ const doneFocus = () => {
   focusX.classList.remove("hidden");
 };
 
+const doneYet = () => {
+  focusChk.className = "fa-regular fa-square";
+  focusShow.classList.remove("strike-text");
+};
+
 const showInput = () => {
   focusInput.classList.remove("hidden");
   focusDiv.classList.add("hidden");
@@ -43,5 +48,11 @@ if (savedFocus === null) {
 } else displayFocus(savedFocus);
 
 focusForm.addEventListener("submit", submitFocus);
-focusChk.addEventListener("click", doneFocus);
+focusChk.addEventListener("click", () => {
+  if (focusChk.className == "fa-regular fa-square") {
+    doneFocus();
+  } else {
+    doneYet();
+  }
+});
 focusX.addEventListener("click", showInput);

@@ -1,0 +1,103 @@
+/* apps, weather */
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-weight: 700;
+  padding: 20px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-btn {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.Apps {
+  display: none;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dropdown:hover .Apps {
+  display: flex;
+  flex-direction: column;
+}
+
+.Apps a {
+  font-size: 30px;
+  margin: 20px 0px;
+  color: white;
+}
+
+.Apps a:hover {
+  transform: scale(1.3);
+}
+.Apps a:first-child {
+  animation: 0.5s ease-in-out displayApps;
+}
+.Apps a:nth-child(2) {
+  animation: 0.5s ease-in-out displayApps;
+  animation-delay: 0.1s;
+}
+.Apps a:nth-child(3) {
+  animation: 0.5s ease-in-out displayApps;
+  animation-delay: 0.2s;
+}
+.Apps a:nth-child(4) {
+  animation: 0.5s ease-in-out displayApps;
+  animation-delay: 0.3s;
+}
+
+@keyframes displayApps {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+/* apps end */
+.weather {
+  font-weight: 400;
+  display: flex;
+}
+.weather-icon {
+  font-size: 20px;
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.weather-temp {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+#weather-space {
+  padding-left: 2px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.weather-loca {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* weather end */
+
+/* header end */

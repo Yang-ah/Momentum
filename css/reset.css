@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fuzzy Bubbles", cursive;
+  line-height: 1;
+}
+
+body {
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  font-style: none;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+button {
+  background-color: inherit;
+  outline: none;
+  border-style: none;
+  cursor: pointer;
+}
+
+/* reset */
