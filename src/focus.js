@@ -47,6 +47,12 @@ if (savedFocus === null) {
   showInput();
 } else displayFocus(savedFocus);
 
+if (localStorage.getItem("username") === null) {
+  focusForm.classList.add("hidden");
+} else {
+  focusForm.classList.remove("hidden");
+}
+
 focusForm.addEventListener("submit", submitFocus);
 focusChk.addEventListener("click", () => {
   if (focusChk.className == "fa-regular fa-square") {

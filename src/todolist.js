@@ -70,3 +70,9 @@ if (savedList !== null) {
   todoList = parsedList;
   todoList.forEach(displayTodo);
 }
+
+if (localStorage.getItem("username") === null) {
+  todoForm.classList.add("hidden");
+} else {
+  todoForm.classList.remove("hidden");
+}
