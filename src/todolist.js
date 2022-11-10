@@ -25,33 +25,21 @@ function deleteToDo(e) {
   saveToDos();
 }
 
-const chkTodo = (e) => {
-  e.preventDefault();
-  console.log(e);
-};
-
 const displayTodo = (todoOBJ) => {
   const createLi = document.createElement("li");
   createLi.id = todoOBJ.id;
   createLi.className = "todolist-li";
   const text = document.createElement("span");
   text.textContent = todoOBJ.text;
-
   const createXBtn = document.createElement("button");
   createXBtn.textContent = "❌";
   createXBtn.className = "todolist-xbtn";
 
-  const createChkBtn = document.createElement("button");
-  createChkBtn.className = "todo_sqaure";
-  createChkBtn.innerHTML = `<i class="fa-regular fa-square"></i>`;
-
   todoUl.appendChild(createLi);
-  createLi.appendChild(createChkBtn);
   createLi.appendChild(text);
   createLi.appendChild(createXBtn);
 
   createXBtn.addEventListener("click", deleteToDo);
-  createChkBtn.addEventListener("click", chkTodo);
 };
 
 function sendTodo(e) {
@@ -71,10 +59,6 @@ function sendTodo(e) {
     todoInput.value = "";
   }
 }
-
-const deleteLi = () => {
-  chkBox.classList.add("fa-square-check");
-};
 
 /* event listener */
 
