@@ -1,6 +1,6 @@
 ## Momentum
 
-자바스크립트 연습을 위한 'momentum' clone을 해봤습니다.
+자바스크립트 연습을 위한 chrome 'momentum' clone.
 
 <br>
 
@@ -17,7 +17,7 @@
 
 ## Result <a href="https://yang-ah.github.io/Momentum/">(<u>Link:Click</u>👆🏻)<a/>
 
-<img src="https://user-images.githubusercontent.com/97151214/201289893-3790b183-a8d2-4f3d-953a-79c45691721d.gif" />
+<img src="https://user-images.githubusercontent.com/97151214/201289893-3790b183-a8d2-4f3d-953a-79c45691721d.gif" width="800px"/>
 
 1. refresh 시, 배경화면이 랜덤하게 바뀜
 2. links에 hover 시, google, gmail, google drive, youtube 링크 아이콘이 나타남
@@ -26,7 +26,7 @@
 5. login 기능
    <br><br>
 
-<img src="https://user-images.githubusercontent.com/97151214/201290054-9bfa40cc-5e3c-444b-b7f5-5525f5259e4b.gif" />
+<img src="https://user-images.githubusercontent.com/97151214/201290054-9bfa40cc-5e3c-444b-b7f5-5525f5259e4b.gif" width="800px"/>
 
 &nbsp;&nbsp;&nbsp;-- 로그인 후에 사용할 수 있는 기능 --
 <br>
@@ -36,13 +36,3 @@
 7. todolist 작성가능 등록, 삭제 가능
 
 <br>
-
-## Function
-
-| Function | Description |
-| -------- | ----------- |
-|          | function    |
-
-<br>
-
-## 느낀점
